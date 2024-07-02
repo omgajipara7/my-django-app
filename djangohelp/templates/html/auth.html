@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+
+{% if messages %}
+    {% for message in messages %}
+        <p style="color: red;">{{ message }}</p>
+    {% endfor %}
+{% endif %}
+
+<h2>Register</h2>
+<form method="POST">
+    {% csrf_token %}
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+ <div>
+        <label for="stenro">enrollment</label>
+        <input id="stenro" name="enroll" type="text" required>
+    </div>
+    <div>
+        <label for="branch">branch</label>
+        <input id="branch" name="branch" type="text"required>
+        </div>
+
+    <button type="submit">Register</button>
+</form>
+
+
+</body>
+</html>

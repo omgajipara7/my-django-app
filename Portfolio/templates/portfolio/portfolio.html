@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Gajipara - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+            color: #343a40; /* Dark text */
+        }
+
+        .navbar {
+            background-color: #007bff; /* Dark blue navbar */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .navbar-brand {
+            color: #ffffff; /* White text */
+            font-weight: bold;
+            font-size: 1.5rem; /* Larger font size */
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff; /* White text */
+            transition: color 0.3s;
+            font-size: 1.1rem; /* Slightly larger font size */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa; /* Lighter white on hover */
+        }
+
+        .section-title {
+            border-bottom: 2px solid #007bff; /* Blue underline */
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            color: #007bff; /* Blue color */
+            font-size: 2rem; /* Larger font size */
+            font-weight: bold;
+        }
+
+        .project-item {
+            background-color: #ffffff; /* White background */
+            border: 1px solid #e3e6f0; /* Light gray border */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px); /* Move up slightly on hover */
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #343a40; /* Dark background */
+            color: #ffffff; /* White text */
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        .footer a {
+            color: #ffffff; /* White text for links in footer */
+        }
+
+        .footer a:hover {
+            color: #f8f9fa; /* Lighter white on hover */
+            text-decoration: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 1.3rem;
+            }
+            .navbar-nav .nav-link {
+                font-size: 1rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="https://omgajipara.pythonanywhere.com">HexaCore</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#domains">Domains</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tools">Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5 pt-5">
+        <section id="about" class="mb-5">
+            <div class="text-center">
+                <p class="lead">Welcome to HexaCore by Om Gajipara</p>
+                <h1>HexaCore Products </h1>
+            </div>
+        </section>
+
+        <section id="domains" class="mb-5">
+            <h2 class="section-title">Domains</h2>
+            <ul class="list-group domain-list mb-4">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Domain 1
+                    <a href="https://omvvp.pythonanywhere.com" target="_blank">omvvp.pythonanywhere.com</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Domain 2
+                    <a href="https://omgajipara.pythonanywhere.com" target="_blank">omgajipara.pythonanywhere.com</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects" class="mb-5">
+            <h2 class="section-title">Projects</h2>
+            <ul class="list-group project-list mb-4">
+                <li class="list-group-item project-item">
+                    <a href="https://omgajipara.pythonanywhere.com/StockTracker/" target="_blank"><strong>StockTracker</strong></a>
+                </li>
+                <li class="list-group-item project-item">
+                    <a href="https://omvvp.pythonanywhere.com/yt/" target="_blank"><strong>SongSaver</strong></a>
+                </li>
+                <li class="list-group-item project-item">
+                    <a href="https://omvvp.pythonanywhere.com/receipes/" target="_blank"><strong>RecipeVault</strong></a>
+                </li>
+                <li class="list-group-item project-item">
+                    <a href="https://weblp11.000webhostapp.com/login.php/" target="_blank"><strong>RANDOM THINGS</strong></a>
+                </li>
+                <li class="list-group-item project-item">
+                    <a href="http://userregistrationsysteeemmm111.000webhostapp.com/l1.php/" target="_blank"><strong>Login Registration System</strong></a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills" class="mb-5">
+            <h2 class="section-title">Skills</h2>
+            <ul class="list-inline mb-4">
+                <li class="list-inline-item badge badge-primary badge-pill">Python</li>
+                <li class="list-inline-item badge badge-primary badge-pill">Django</li>
+                <li class="list-inline-item badge badge-primary badge-pill">PHP</li>
+            </ul>
+        </section>
+
+        <section id="tools" class="mb-5">
+            <h2 class="section-title">Tools</h2>
+            <ul class="list-inline mb-4">
+                <li class="list-inline-item badge badge-secondary badge-pill">Pythonanywhere</li>
+                <li class="list-inline-item badge badge-secondary badge-pill">Hostinger</li>
+                <li class="list-inline-item badge badge-secondary badge-pill">PhpMyAdmin</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="mb-5">
+            <h2 class="section-title">Contact</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li><a href="mailto:ompatel99096@gmail.com">ompatel99096@gmail.com</a></li>
+                        <li>Phone: +917990742303</li>
+                        <li>Address: Rajkot, Gujarat, India</li>
+                        <li><a href="tel:+917990742303">Call</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Send a Message</h3>
+                    <form action="{% url 'contact' %}" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone number</label>
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+    </div>
+    <div class="form-group">
+        <label for="desc">Message</label>
+        <textarea class="form-control" id="desc" name="desc" rows="3" placeholder="Enter your message" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="footer">
+            <p>Powered by HexaCore by <a href="https://omgajipara.pythonanywhere.com" target="_blank">Om Gajipara</a></p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

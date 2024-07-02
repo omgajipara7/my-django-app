@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student List</title>
+</head>
+<body>
+
+<h1>Student List</h1>
+
+<ul>
+{% for studen in student %}
+<li><hr><a href="{% url 'stdetails' studen.id %}">{{ forloop.counter }}. name:{{ studen.name }} </a><br>   branch: {{ studen.branch }}<hr></li>{% endfor %}
+</ul>
+
+</body>
+</html>

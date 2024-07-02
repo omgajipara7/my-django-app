@@ -1,0 +1,19 @@
+{% for x in fruits %}
+{{ x }}
+{% endfor %}
+
+
+<h1>Hello {{ firstname }}, how are you?</h1>
+
+
+{% with firstname="Tobias" %}
+<h1>Hello {{ firstname }}, how are you?</h1>
+{% endwith %}
+
+
+
+<ul>
+  {% for x in student %}
+    <li>{{ x.name }}</li>
+  {% endfor %}
+</ul>

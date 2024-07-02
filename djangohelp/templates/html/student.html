@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>student form</title>
+
+</head>
+<body>
+<h1>
+    student form
+</h1>
+<h2><a href="{% url 'stlist' %}">student list</a> </h2>
+<form method="post">
+    {% csrf_token %}
+    <div>
+        <label for="stname">name</label>
+        <input id="stname" type="text" name="name" >
+        </div>
+    <div>
+        <label for="stenro">enrollment</label>
+        <input id="stenro" name="enroll" type="text">
+    </div>
+    <div>
+        <label for="branch">branch</label>
+        <input id="branch" name="branch" type="text">
+        </div>
+    <div>
+        <label for="submit">
+            submit
+        </label>
+        <input id="submit" type="submit">
+    </div>
+
+</form>
+</body>
+</html>
